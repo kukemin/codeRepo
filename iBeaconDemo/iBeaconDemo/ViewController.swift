@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
     lazy var textfild:UITextField = {
         
-        let textfild = UITextField.init(frame: CGRect(x: 50, y: 50, width: UIScreen.main.bounds.width - 100, height: 50))
+        let textfild = UITextField.init(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width - 100, height: 50))
         
         textfild.placeholder = "请输入要检测的proximityUUID"
         
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         
         
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
