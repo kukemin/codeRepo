@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         }()
     lazy var tableview: UITableView = {
  
-        let tablewview = UITableView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        let tablewview = UITableView.init(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         view.addSubview(tablewview)
         tablewview.dataSource = self;
         tablewview.delegate = self;
@@ -45,10 +45,27 @@ class ViewController: UIViewController {
         return Array()
     }()
     
+    lazy var textfild:UITextField = {
+        
+        let textfild = UITextField.init(frame: CGRect(x: 50, y: 50, width: UIScreen.main.bounds.width - 100, height: 50))
+        
+        textfild.placeholder = "请输入要检测的proximityUUID"
+        
+        textfild.borderStyle = .line
+
+        return textfild
+        
+        
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+        
+        
+//        view.addSubview(textfild)
+        
         
         // 在开始监控之前，我们需要判断改设备是否支持，和区域权限请求
             let availableMonitor = CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self)
