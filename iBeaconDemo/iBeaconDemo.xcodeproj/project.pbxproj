@@ -196,6 +196,7 @@
 				04A9A6FE251A1D3F00089750 /* Sources */,
 				04A9A6FF251A1D3F00089750 /* Frameworks */,
 				04A9A700251A1D3F00089750 /* Resources */,
+				A503E5F69E94A89BB017B16B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +375,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iBeaconDemo-iBeaconDemoUITests/Pods-iBeaconDemo-iBeaconDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A503E5F69E94A89BB017B16B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBeaconDemoTests/Pods-iBeaconDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iBeaconDemoTests/Pods-iBeaconDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iBeaconDemoTests/Pods-iBeaconDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1D973D721918FC3A01A9D48 /* [CP] Check Pods Manifest.lock */ = {
